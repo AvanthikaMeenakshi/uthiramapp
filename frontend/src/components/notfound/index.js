@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 
 import './style.css';
-import error from './error-404.png';
 
-import {Bootstrap} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+import error from './error-404.png';
 
 export default class NotFound extends Component {
   // static propTypes = {}

@@ -4,16 +4,23 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "parsley": "^0.1.0",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.3",
+    "react-custom-validation": "^0.5.5",
     "react-dom": "^15.6.1",
+    "react-intl-tel-input": "^4.2.0",
     "react-router": "^3.0.0",
-    "react-scripts": "1.0.13"
+    "react-scripts": "1.0.13",
+    "react-select": "^1.0.0-rc.6",
+    "react-validation": "^2.10.9",
+    "validator": "^8.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "proxy": "http://localhost:4000"
 }

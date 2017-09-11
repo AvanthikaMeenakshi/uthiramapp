@@ -5,12 +5,19 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var http = require('http');
-
+var session = require('express-session');
+var cookieSession = require('cookie-session')
 var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-
+app.set('trust proxy', 1) // trust first proxy
+app.use(cookieSession({
+  name: 'session',
+  keys: ['key1', 'key2'],
+  // Cookie Options
+  maxAge: 24 * 60 * 60 * 1000 // 24 hours
+}))
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
