@@ -9,7 +9,7 @@ var session = require('express-session');
 var cookieSession = require('cookie-session')
 var index = require('./routes/index');
 var users = require('./routes/users');
-
+var mysql      = require('mysql');
 var app = express();
 app.set('trust proxy', 1) // trust first proxy
 app.use(cookieSession({
@@ -29,7 +29,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(function(req, res, next) {
+  res.locals.connection = mysql.createConnection({
+    host     : 'localhost',
+    user     : 'root',
+    database : 'donorapp'
+  });
+  res.locals.connection.connect();
+  next();
+});
 app.use('/', index);
 app.use('/users', users);
 

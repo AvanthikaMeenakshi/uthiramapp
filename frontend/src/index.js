@@ -12,7 +12,7 @@ import * as ReactBootstrap from 'react-bootstrap';
 ReactDOM.render(
 	<div>
 		<HeaderComponent />
-			<Routes history={browserHistory} />
+		<Routes history={browserHistory} />
 		<FooterComponent />
 	</div>,
 	document.getElementById('root')

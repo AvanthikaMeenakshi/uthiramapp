@@ -1,4 +1,269 @@
+html, body{
+    font-family: 'Lato', sans-serif !important;
+    background: #FAFAFB !important;
+}
+
 .form-error{
 	color: red;
-	font-size: 11px;
+    font-size: 12px;
+    position: absolute;
+    top: 28px;
+    right: 40px;
+    bottom: 0px;
+    font-weight: bold;
 }
+
+.form-control{
+	margin-bottom: 5px;
+    box-shadow: none!important;
+}
+
+.form-control:focus{
+	box-shadow: none !important;
+	border-color: #A3A3A4 !important;
+    outline-width: 0;
+}
+
+#city:focus{
+	box-shadow: none !important;
+	border-color: #A3A3A4 !important;
+    outline-width: 0;
+}
+
+#city:active{
+    box-shadow: none !important;
+    border-color: #A3A3A4 !important;
+    outline-width: 0;
+}
+
+#city {
+	display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
+}
+
+.intl-tel-input{
+	width: 100% !important;
+}
+
+.p50{
+    padding: 50px;
+}
+
+.p15{
+    padding: 15px;
+}
+
+.p25{
+        padding: 25px;
+}
+
+.uth-panel{
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(206,205,206,1);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(206,205,206,1);
+    box-shadow: 0px 0px 14px 0px rgba(206,205,206,1);
+}
+
+.uth-panel-head{
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.header{
+	display: flex;
+	height: 95px;
+	background: #f5f4f3;
+	align-items: center;
+}
+
+.header-links a{
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #4e585e;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    margin: 0 30px;
+}
+
+.logo-a{
+    width: 100px;
+    height: 95px;
+    margin-left: 0px;
+    flex-basis: 20%;
+}
+
+.header-links{
+    display: flex;
+    width: 100%;
+    align-items: initial;
+    justify-content: flex-end;
+}
+
+
+.tc{
+    display: flex;
+}
+
+.btn{
+    padding: 10px 20px !important;
+    font-size: 15px !important;
+}
+
+.tc .form-error{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+.tc label{
+    text-align: justify;
+}
+
+
+.submit-section{
+    text-align: center;
+}
+
+.btn-uth-submit:hover{
+    background: #FFF;
+    color: #4e585e;
+    border: 2px solid #4e585e !important;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+}
+
+
+.btn-uth-submit{
+    background: #4e585e;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    border: 2px solid transparent !important;
+    font-weight: bold;
+}
+
+footer{
+/*    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;*/
+}
+
+.list-links{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.list-links li{
+    padding: 10px;
+}
+
+.small-text{
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/*Heading section - secondary*/
+.heading-section{
+    text-align: center;
+    margin: 50px;
+}
+
+.heading-section .main-heading{
+    font-size: 30px;
+}
+
+.highlightme{
+    color: #ff8484;
+    font-weight: bold;
+}
+
+.meta-details{
+    display: flex;
+    align-content: center;
+}
+
+.help-text{
+    line-height: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #4e585e;
+}
+
+.panel-body {
+    padding: 0px !important;
+}
+
+/*Registeration*/
+
+.blood-requirements .requiree{
+    padding: 10px 0px;
+    border-bottom: 1px solid #ddd; 
+    line-height: 23px;
+}
+
+.blood-requirements li:last-child{
+    border: none;
+}
+
+.Select-menu-outer {
+  z-index: 999 !important;
+}
+
+.Select-value{
+    height: 34px;
+}
+
+.Select--single{
+    width: 100%;
+}
+
+#PlacesAutocomplete__autocomplete-container{
+    z-index: 9999;
+}
+
+.form-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px
+}
+
+.form-wrap div{
+    flex-basis: 80% !important;
+}
+
+.form-wrap label{
+    color: #4e585e;
+    text-transform: capitalize;
+    width: 20%;
+    font-size: 13px;
+}
+
+/*Site footer*/
+
+.site-footer{
+    background: #f5f4f3;
+    padding: 25px;
+    z-index: 9999
+}
+
