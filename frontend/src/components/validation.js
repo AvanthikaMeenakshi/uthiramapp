@@ -66,6 +66,19 @@ Object.assign(Validation.rules, {
         },
         hint: () => <span className="form-error is-visible">Passwords should be equal.</span>
     },
+
+    passwordLogin: {
+        // rule function can accept argument: 
+        // components - components registered to Form mapped by name 
+        rule: (value, components) => {
+            const password = components.passwordLogin.state;
+            if(password.value){
+                console.log(password.value)
+                return validator.isEmpty(password.value)
+            }
+        },
+        hint: () => <span className="form-error is-visible">Password cannot be empty</span>
+    },
     // Define API rule to show hint after API error response 
     api: {
         // We don't need the rule here because we will call the 'showError' method by hand on API error 

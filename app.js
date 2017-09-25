@@ -9,9 +9,11 @@ var session = require('express-session');
 var cookieSession = require('cookie-session')
 var index = require('./routes/index');
 var users = require('./routes/users');
+var cors = require('cors')
 var mysql      = require('mysql');
 var app = express();
 app.set('trust proxy', 1) // trust first proxy
+app.use(cors())
 app.use(cookieSession({
   name: 'session',
   keys: ['key1', 'key2'],

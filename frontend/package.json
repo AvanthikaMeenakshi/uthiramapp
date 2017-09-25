@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "moment": "^2.18.1",
     "parsley": "^0.1.0",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.3",
@@ -13,6 +14,8 @@
     "react-google-autocomplete": "^1.0.13",
     "react-intl-tel-input": "^4.2.0",
     "react-ionicons": "^1.5.9",
+    "react-modal": "^2.3.2",
+    "react-moment": "^0.6.5",
     "react-router": "^3.0.0",
     "react-scripts": "1.0.13",
     "react-select": "^1.0.0-rc.6",

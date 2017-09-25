@@ -11,6 +11,7 @@ html, body{
     right: 40px;
     bottom: 0px;
     font-weight: bold;
+        z-index: 999;
 }
 
 .form-control{
@@ -131,6 +132,10 @@ html, body{
 
 .tc label{
     text-align: justify;
+}
+
+.ReactModal__Overlay {
+    z-index: 9999 !important;
 }
 
 
