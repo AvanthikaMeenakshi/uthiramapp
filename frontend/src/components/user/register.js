@@ -33,7 +33,7 @@ export default class Registration extends Component {
             passwordConfirm: '',
             loading: false,
             error: false,
-            bloodGroup: 'Choose', 
+            bloodGroup: 'Choose',
             policy: 0
         }
         this.logChange = this.logChange.bind(this)
@@ -53,8 +53,8 @@ export default class Registration extends Component {
             dob: this.state.dob,
             password: this.state.password,
             passwordConfirm: this.state.passwordConfirm,
-            bloodGroup: this.state.bloodGroup, 
-            policy: this.state.policy 
+            bloodGroup: this.state.bloodGroup,
+            policy: this.state.policy
         }
         console.log(data)
         fetch("http://localhost:4000/users/new", {
@@ -67,7 +67,7 @@ export default class Registration extends Component {
             }
             return response.json();
         }).then(function(data) {
-            console.log(data)    
+            console.log(data)
             if(data == "success"){
                this.refs.msg.show('Some text or component', {
                   time: 2000,
@@ -100,14 +100,14 @@ export default class Registration extends Component {
         console.log(e)
         if(e.target){
             if(e.target.name){
-                this.setState({[e.target.name]: e.target.value});  
+                this.setState({[e.target.name]: e.target.value});
 
             }
             if(e.target.type == "tel"){
                 this.setState({"phone_number": e.target.value});
             }
         } else {
-            this.setState({'bloodGroup': e.value});   
+            this.setState({'bloodGroup': e.value});
         }
     }
 
@@ -161,8 +161,8 @@ export default class Registration extends Component {
                                 <div className="col-md-12">
                                     <div className="form-wrap">
                                         <label>Phone Number</label>
-                                        <IntlTelInput 
-                                            css={['intl-tel-input', 'form-control']} 
+                                        <IntlTelInput
+                                            css={['intl-tel-input', 'form-control']}
                                             utilsScript={'libphonenumber.js'}
                                             preferredCountries={['in']}
                                             onPhoneNumberChange={this.phoneUpdate}
@@ -175,7 +175,7 @@ export default class Registration extends Component {
                                         <Autocomplete
                                             className="form-control"
                                             onPlaceSelected={(place) => {
-                                                this.setState({'address': place.formatted_address});  
+                                                this.setState({'address': place.formatted_address});
                                             }}
                                             types={['(regions)']}
                                             componentRestrictions={{country: "in"}}
@@ -207,7 +207,7 @@ export default class Registration extends Component {
                                     <div className="form-wrap">
                                         <label>Password</label>
                                         <Validation.components.Input onChange={this.logChange} className="form-control" type='password' value='' name='password' validations={['required', 'password']}/>
-                                        
+
                                     </div>
                                 </div>
                                 <div className="col-md-12">
@@ -237,31 +237,31 @@ export default class Registration extends Component {
                                 <li className="requiree">
                                     <div style={{"fontWeight": "bold"}}>Mr. Ram, </div>
                                     <span className="highlightme meta-details"><Ionicon fontSize="18px" icon="ion-waterdrop" color="#ff8484" /> O+ - 1 unit</span>
-                                    <div className="meta-details"><Ionicon fontSize="18px" icon="ion-android-call" color="#4e585e" />9884237738.</div>
+                                    <div className="meta-details"><Ionicon fontSize="18px" icon="ion-android-call" color="#4e585e" />1234567890.</div>
                                     <div className="meta-details"><Ionicon fontSize="18px" icon="ion-location" color="#4e585e" />Appolo Hospital, Greams Road.</div>
                                 </li>
                                 <li className="requiree">
                                     <div style={{"fontWeight": "bold"}}>Mr. Ram, </div>
                                     <span className="highlightme meta-details"><Ionicon fontSize="18px" icon="ion-waterdrop" color="#ff8484" /> O+ - 1 unit</span>
-                                    <div className="meta-details"><Ionicon fontSize="18px" icon="ion-android-call" color="#4e585e" />9884237738.</div>
+                                    <div className="meta-details"><Ionicon fontSize="18px" icon="ion-android-call" color="#4e585e" />1234567890.</div>
                                     <div className="meta-details"><Ionicon fontSize="18px" icon="ion-location" color="#4e585e" />Appolo Hospital, Greams Road.</div>
                                 </li>
                                 <li className="requiree">
                                     <div style={{"fontWeight": "bold"}}>Mr. Ram, </div>
                                     <span className="highlightme meta-details"><Ionicon fontSize="18px" icon="ion-waterdrop" color="#ff8484" /> O+ - 1 unit</span>
-                                    <div className="meta-details"><Ionicon fontSize="18px" icon="ion-android-call" color="#4e585e" />9884237738.</div>
+                                    <div className="meta-details"><Ionicon fontSize="18px" icon="ion-android-call" color="#4e585e" />1234567890.</div>
                                     <div className="meta-details"><Ionicon fontSize="18px" icon="ion-location" color="#4e585e" />Appolo Hospital, Greams Road.</div>
                                 </li>
                                 <li className="requiree">
                                     <div style={{"fontWeight": "bold"}}>Mr. Ram, </div>
                                     <span className="highlightme meta-details"><Ionicon fontSize="18px" icon="ion-waterdrop" color="#ff8484" /> O+ - 1 unit</span>
-                                    <div className="meta-details"><Ionicon fontSize="18px" icon="ion-android-call" color="#4e585e" />9884237738.</div>
+                                    <div className="meta-details"><Ionicon fontSize="18px" icon="ion-android-call" color="#4e585e" />1234567890.</div>
                                     <div className="meta-details"><Ionicon fontSize="18px" icon="ion-location" color="#4e585e" />Appolo Hospital, Greams Road.</div>
                                 </li>
                                 <li className="requiree">
                                     <div style={{"fontWeight": "bold"}}>Mr. Ram, </div>
                                     <span className="highlightme meta-details"><Ionicon fontSize="18px" icon="ion-waterdrop" color="#ff8484" /> O+ - 1 unit</span>
-                                    <div className="meta-details"><Ionicon fontSize="18px" icon="ion-android-call" color="#4e585e" />9884237738.</div>
+                                    <div className="meta-details"><Ionicon fontSize="18px" icon="ion-android-call" color="#4e585e" />1234567890.</div>
                                     <div className="meta-details"><Ionicon fontSize="18px" icon="ion-location" color="#4e585e" />Appolo Hospital, Greams Road.</div>
                                 </li>
                             </ul>
