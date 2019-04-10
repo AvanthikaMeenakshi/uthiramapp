@@ -1,21 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import { browserHistory } from 'react-router'; // importing from 'react-router'
-import Routes from './routes';
-import registerServiceWorker from './registerServiceWorker';
-import HeaderComponent from './components/header';
-import FooterComponent from './components/footer';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
-import * as ReactBootstrap from 'react-bootstrap';
-ReactDOM.render(
-	<div>
-		<HeaderComponent />
-		<Routes history={browserHistory} />
-		<FooterComponent />
-	</div>,
-	document.getElementById('root')
-);
+import { browserHistory } from 'react-router';
+import App from './components/App';
+import HeaderComponent from './components/HeaderComponent';
+import FooterComponent from './components/FooterComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './stylesheets/index.css';
+import './stylesheets/animate.css';
 
-registerServiceWorker();
+ReactDOM.render(
+  <div>
+    <HeaderComponent />
+    <App history={browserHistory} />
+    <FooterComponent />
+  </div>,
+  document.getElementById('root')
+);

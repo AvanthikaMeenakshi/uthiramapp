@@ -1,10 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Blood Donar Application",
+  "name": "Donate blood - Uthiram.com",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "192x192",
+      "src": "images/favicon.png",
       "type": "image/png"
     }
   ],
