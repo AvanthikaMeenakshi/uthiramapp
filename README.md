@@ -23,6 +23,11 @@
 1. From the root directory, go to client folder. Do `npm install` in the client folder.
 2. Do `npm start` and the client will be started at localhost:3000. The proxy is already configured to make all the requests to localhost:4000.
 
+The homepage:
+![image](https://user-images.githubusercontent.com/14136164/55911285-eea2a200-5bfd-11e9-8ccf-de89ba8d711c.png)
+
+
 **The template of the project**
 
 The template from which the project has been bootstrapped is in /client/public/blooddonar-template. Please make use of it if needed to develop the other routes of the application.
+
