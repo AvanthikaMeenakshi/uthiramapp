@@ -30,5 +30,5 @@ This is the current homepage:
 
 **The template of the project**
 
-The template from which the project has been bootstrapped is in /client/public/blooddonar-template. Please make use of it if needed to develop the other routes of the application.
+The template from which the project has been bootstrapped is in `/client/public/blooddonar-template`.
 
