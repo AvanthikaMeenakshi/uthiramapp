@@ -1,6 +1,6 @@
-**Starting node-server:**
+**Starting node-server from /server:**
 
-1. Import donorapp.sql into MySQL server. If needed, find the following lines in your app.js and modify it as per your configuration.
+1. Import donorapp.sql into MySQL server. If needed, find the following lines in your server/app.js and modify it as per your configuration.
 
    ```js
    app.use(function(req, res, next) {
@@ -18,9 +18,9 @@
 2. Do `npm install` - This will install all the dependencies listed in the package.json.
 3. `node app.js` will start the server on localhost:4000
 
-**Starting the react application:**
+**Starting the react application from /frontend:**
 
-1. From the root directory, go to client folder. Do `npm install` in the client folder.
+1. From the root directory, go to frontend folder. Do `npm install` in the frontend folder.
 2. Do `npm start` and the client will be started at localhost:3000. The proxy is already configured to make all the requests to localhost:4000.
 
 This is the current homepage:
