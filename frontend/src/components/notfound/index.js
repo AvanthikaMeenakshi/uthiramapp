@@ -1,5 +1,4 @@
 import React from 'react';
-
 import error from './error-404.png';
 
 const NotFound = () => (
