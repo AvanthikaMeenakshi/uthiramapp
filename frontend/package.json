@@ -18,7 +18,7 @@
     "react-select": "^1.0.0-rc.6",
     "react-validation": "^2.10.9",
     "reactstrap": "^6.5.0",
-    "validator": "^8.2.0"
+    "validator": "^13.7.0"
   },
   "eslintConfig": {
     "extends": "react-app"
